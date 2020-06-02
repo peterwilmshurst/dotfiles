@@ -45,9 +45,14 @@ alias update="source ~/.zshrc"
 # add .dotfiles to bare repo (no need for symlinks) - https://www.atlassian.com/git/tutorials/dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
+# navigation
+alias ..='cd ..' 
+alias ...='cd ../..'
+
+
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 prompt spaceship
 
 # Add colors to terminal commands (green command means that the command is valid)
-source ~/dotfiles/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+source ~/zshrc/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
