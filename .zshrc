@@ -36,6 +36,12 @@ load-nvmrc() {
 # Run load-nvmrc on initial shell load
 load-nvmrc
 
+# Set the tab title to the current working directory before each prompt
+function tabTitle () {
+  window_title="\033]0;${PWD##*/}\007"
+  echo -ne "$window_title"
+}
+
 # Open .zshrc to be edited in VS Code
 alias zshrc='code ~/.zshrc'
 
@@ -49,6 +55,9 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias ..='cd ..' 
 alias ...='cd ../..'
 
+#colorls
+alias lc='colorls'
+
 
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
@@ -56,3 +65,6 @@ prompt spaceship
 
 # Add colors to terminal commands (green command means that the command is valid)
 source ~/zshrc/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
+
+# Add colorls ruby gem
+source $(dirname $(gem which colorls))/tab_complete.sh
