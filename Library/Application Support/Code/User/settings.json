@@ -1,3 +1,5 @@
 {
-    "editor.fontFamily": "Hack Nerd Font Mono"
+    "editor.fontFamily": "Hack Nerd Font Mono",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.iconTheme": "vscode-icons"
 }
