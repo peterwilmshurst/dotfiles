@@ -4,9 +4,9 @@
 
 This repository contains my personal dotfiles. They are stored here for convenience so that I may quickly access them on new machines or new installs. Also, others may find some of my configurations helpful in customising their own dotfiles.
 
-I use the git bare repository method for managing my dotfiles: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/ 
+I use the [git bare repository method](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) for managing my dotfiles. 
 
-Once you have initiated a new bare repository (thanks DistroTube - https://www.youtube.com/watch?v=tBoLDpTWVOM&t=855s) browse to the configuration file you’d like to push to the repo and run the following commands:
+Once you have initiated a new bare repository (thanks [DistroTube](https://www.youtube.com/watch?v=tBoLDpTWVOM&t=855s)) browse to the configuration file you’d like to push to the repo and run the following commands:
 
 $ config add /path/to/file
 $ config commit -m "A short message"
