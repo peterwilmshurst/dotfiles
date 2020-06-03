@@ -8,9 +8,9 @@ I use the [git bare repository method](https://developer.atlassian.com/blog/2016
 
 Once you have initiated a new bare repository (thanks [DistroTube](https://www.youtube.com/watch?v=tBoLDpTWVOM&t=855s)) browse to the configuration file you’d like to push to the repo and run the following commands:
 
-$ config add /path/to/file
-$ config commit -m "A short message"
-$ config push
+*$ config add /path/to/file*\
+*$ config commit -m "A short message"*\
+*$ config push*
 
 **Contents**\
 Version 1.0
