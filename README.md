@@ -37,7 +37,15 @@ Install [Homebrew](https://brew.sh)
 *$ brew cask install spotify*\
 *$ brew cask install skype*\
 *$ brew cask install dropbox*\
-*$ brew cask install mamp*
+*$ brew cask install mamp*\
+*$ brew cask install transmit*
+
+**Extra Steps**
+
+**MAMP**
+To use PHP config included with MAMP, add the following has been added to your *zshrc* file (PATH should be relevant to your MAMP installation):
+
+export PATH=/Applications/MAMP/bin/php/php7.3.9/bin:$PATH
 
 **Install the following fonts:** 
 Required for ligatures and icons in shell.\
@@ -50,8 +58,12 @@ Remember to select the font from *terminal > preferences* and vscode (already in
 **Install the following brew packages:**. 
 
 *$ brew install composer*\
-*$ brew install nvm* - [link](https://medium.com/@jamesauble/install-nvm-on-mac-with-brew-adb921fb92cc). 
+*$ brew install nvm* - [link](https://medium.com/@jamesauble/install-nvm-on-mac-with-brew-adb921fb92cc)\
+*$ brew install tree* 
 
+**Extra Steps**
+
+**NVM**
 When installing nvm complete the following steps:
 
 *$ mkdir ~/.nvm*.
@@ -61,7 +73,7 @@ Ensure the following has been added to your *.zshrc* file:
 export NVM_DIR=~/.nvm\
 source $(brew --prefix nvm)/nvm.sh
 
-$ brew install tree
+
 
 ## NPM
 

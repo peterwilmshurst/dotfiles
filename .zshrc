@@ -26,6 +26,9 @@
 # Zsh hooks
 #------------------
 
+# Use MAMPs PHP configuration
+export PATH=/Applications/MAMP/bin/php/php7.3.9/bin:$PATH
+
 # Enable the addition of zsh hook functions
 autoload -U add-zsh-hook
 
@@ -81,7 +84,6 @@ alias ...='cd ../..'
 
 #colorls
 alias lc='colorls'
-
 
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
